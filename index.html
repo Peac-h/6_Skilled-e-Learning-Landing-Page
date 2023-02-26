@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="description"
+      content="Skilled e-learning landing page, based on the challenge by FrontendMentor, coded by the Peach."
+    />
+    <meta name="keywords" content="HTML, CSS, Sass, Coding" />
+    <meta name="author" content="the Peach" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Grape+Nuts&family=Outfit:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="css/style.css" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/favicon-32x32.png"
+    />
+
+    <title>Skilled e-learning landing page | Frontend Mentor</title>
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <img src="assets/logo-dark.svg" alt="logo" class="header__logo" />
+        <a href="#" class="btn header__btn">Get Started</a>
+      </header>
+
+      <section class="hero__content">
+        <h1 class="hero__header">Maximize skill, minimize budget</h1>
+
+        <p class="hero__text">
+          Our modern courses across a range of in-demand skills will give you
+          the knowledge you need to live the life you want.
+        </p>
+
+        <a href="#" class="btn hero__btn">Get Started</a>
+      </section>
+
+      <section class="hero__picture">
+        <picture class="hero__image">
+          <!-- for mobiles -->
+          <source
+            srcset="
+              assets/image-hero-mobile.webp    1x,
+              assets/image-hero-mobile@2x.webp 2x
+            "
+            type="image/webp"
+            media="(max-width: 51.25em)"
+          />
+          <source
+            srcset="
+              assets/image-hero-mobile.png    1x,
+              assets/image-hero-mobile@2x.png 2x
+            "
+            type="image/png"
+            media="(max-width: 51.25em)"
+          />
+          <!-- for tablets -->
+          <source
+            srcset="
+              assets/image-hero-tablet.webp    1x,
+              assets/image-hero-tablet@2x.webp 2x
+            "
+            type="image/webp"
+            media="(max-width: 56.25em)"
+          />
+          <source
+            srcset="
+              assets/image-hero-tablet.png    1x,
+              assets/image-hero-tablet@2x.png 2x
+            "
+            type="image/png"
+            media="(max-width: 56.25em)"
+          />
+          <!-- for desktops -->
+          <source
+            srcset="
+              assets/image-hero-desktop.webp    1x,
+              assets/image-hero-desktop@2x.webp 2x
+            "
+            type="image/webp"
+          />
+          <!-- alt -->
+          <img
+            srcset="
+              assets/image-hero-desktop.png    1x,
+              assets/image-hero-desktop@2x.png 2x
+            "
+            alt="Hero image of a girl working comfortably on her laptop and drinking coffee"
+            src="assets/image-hero-desktop@2x.png"
+          />
+        </picture>
+      </section>
+
+      <section class="features mg-bg">
+        <div class="feature--active">
+          <h2>Check out our most popular courses!</h2>
+        </div>
+
+        <div class="feature">
+          <img
+            src="assets/icon-animation.svg"
+            alt="icon of the animation feature"
+            class="feature__icon"
+          />
+          <h3 class="feature__heading">Animation</h3>
+          <p class="feature__text">
+            Learn the latest animation techniques to create stunning motion
+            design and captivate your audience.
+          </p>
+          <a href="#" class="feature__btn">Get Started</a>
+        </div>
+
+        <div class="feature">
+          <img
+            src="assets/icon-design.svg"
+            alt="icon of the design feature"
+            class="feature__icon"
+          />
+          <h3 class="feature__heading">Design</h3>
+          <p class="feature__text">
+            Create beautiful, usable interfaces to help shape the future of how
+            the web looks.
+          </p>
+          <a href="#" class="feature__btn">Get Started</a>
+        </div>
+
+        <div class="feature">
+          <img
+            src="assets/icon-photography.svg"
+            alt="icon of the photography feature"
+            class="feature__icon"
+          />
+          <h3 class="feature__heading">Photography</h3>
+          <p class="feature__text">
+            Explore critical fundamentals like lighting, composition, and focus
+            to capture exceptional photos.
+          </p>
+          <a href="#" class="feature__btn">Get Started</a>
+        </div>
+
+        <div class="feature">
+          <img
+            src="assets/icon-crypto.svg"
+            alt="icon of the crypto feature"
+            class="feature__icon"
+          />
+          <h3 class="feature__heading">Crypto</h3>
+          <p class="feature__text">
+            All you need to know to get started investing in crypto. Go from
+            beginner to advanced with this 54 hour course.
+          </p>
+          <a href="#" class="feature__btn">Get Started</a>
+        </div>
+
+        <div class="feature">
+          <img
+            src="assets/icon-business.svg"
+            alt="icon of the business feature"
+            class="feature__icon"
+          />
+          <h3 class="feature__heading">Business</h3>
+          <p class="feature__text">
+            A step-by-step playbook to help you start, scale, and sustain your
+            business without outside investment.
+          </p>
+          <a href="#" class="feature__btn">Get Started</a>
+        </div>
+      </section>
+
+      <footer class="footer">
+        <div class="footer__content">
+          <img src="assets/logo-light.svg" alt="logo" class="footer__logo" />
+          <a href="#" class="btn footer__btn">Get Started</a>
+        </div>
+      </footer>
+    </div>
+    <div class="copyright">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">the Peach</a>.
+    </div>
+  </body>
+</html>

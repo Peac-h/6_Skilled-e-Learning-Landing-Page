@@ -1,0 +1,70 @@
+// color variables
+$color-purple-dark: #13183f;
+$color-purple-light: #666ca3;
+$color-text: #83869a;
+$color-white: #fff;
+$color-rose: #f74780;
+
+$gradient-hero-btn: linear-gradient(180deg, #ff6f48 0%, #f02aa6 100%);
+$gradient-footer-btn: linear-gradient(180deg, #4851ff -54.32%, #f02aa6 100%);
+$gradient-feature: linear-gradient(180deg, #ff6f48 0%, #f02aa6 100%);
+$gradient-container: linear-gradient(180deg, #ffffff 0%, #f0f1ff 100%);
+
+// font variables
+$font-primary: "Plus Jakarta Sans", sans-serif;
+$font-secondary: "Grape Nuts", cursive;
+
+// responsive breakpoints
+$bp-large: 62.5em; // 1000px
+$bp-medium: 56.25em; // 900px
+$bp-small: 51.25em; // 820px
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+
+  @media only screen and (max-width: $bp-large) {
+    font-size: 55%;
+  }
+}
+
+body {
+  font-family: $font-primary;
+  font-size: 1.8rem;
+  color: $color-text;
+  font-weight: 500;
+  line-height: 2.8rem;
+}
+
+.container {
+  display: grid;
+  grid-template-rows: repeat(4, min-content);
+  grid-template-columns:
+    [full-start] minmax(7rem, 1fr)
+    [center-start] repeat(
+      10,
+      [col-start] minmax(min-content, 11.1rem) [col-end]
+    )
+    [center-end] minmax(7rem, 1fr) [full-end];
+
+  overflow: hidden;
+  background-image: $gradient-container;
+
+  @media only screen and (max-width: $bp-small) {
+    grid-template-columns:
+      [full-start] minmax(3rem, 1fr)
+      [center-start] repeat(
+        10,
+        [col-start] minmax(min-content, 11.1rem) [col-end]
+      )
+      [center-end] minmax(3rem, 1fr) [full-end];
+  }
+}

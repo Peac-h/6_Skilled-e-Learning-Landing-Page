@@ -1,0 +1,41 @@
+.footer {
+  grid-column: full-start / full-end;
+
+  background-color: $color-purple-dark;
+  padding: 3.2rem 0;
+
+  display: grid;
+  grid-template-columns: minmax(6rem, 1fr) minmax(min-content, 111rem) minmax(
+      6rem,
+      1fr
+    );
+
+  &__content {
+    grid-column: 2 / 3;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    @media only screen and (max-width: $bp-small) {
+      grid-column: 1 / -1;
+      padding: 3rem;
+    }
+  }
+}
+
+.copyright {
+  font-family: $font-secondary;
+  font-size: 1.8rem;
+  text-align: end;
+  margin-right: 1rem;
+  color: $color-text;
+
+  a {
+    color: $color-purple-dark;
+  }
+}
+
+.mg-bg {
+  margin-bottom: 14rem;
+}

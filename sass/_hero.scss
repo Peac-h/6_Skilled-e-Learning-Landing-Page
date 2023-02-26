@@ -1,0 +1,58 @@
+.hero__content {
+  grid-column: center-start / col-end 5;
+
+  display: grid;
+  grid-template-rows: 14.8rem min-content 2.9rem min-content 4rem min-content 25rem;
+  justify-items: start;
+
+  @media only screen and (max-width: $bp-small) {
+    grid-column: center-start / center-end;
+    grid-template-rows: 3rem min-content 3rem min-content 3rem min-content 65rem;
+  }
+
+  .hero__header {
+    grid-row: 2;
+
+    font-size: 5.6rem;
+    font-weight: 800;
+    line-height: 7.1rem;
+    color: $color-purple-dark;
+  }
+
+  .hero__text {
+    grid-row: 4;
+
+    width: 80%;
+  }
+
+  .hero__btn {
+    grid-row: 6;
+  }
+}
+
+.hero__picture {
+  grid-column: col-start 6 / center-end;
+
+  @media only screen and (max-width: $bp-medium) {
+    scale: 1.1;
+  }
+
+  position: relative;
+
+  .hero__image {
+    position: absolute;
+    top: 30%;
+    left: 95%;
+    transform: translate(-50%, -50%);
+
+    @media only screen and (max-width: $bp-medium) {
+      top: 40%;
+      left: 90%;
+    }
+
+    @media only screen and (max-width: $bp-small) {
+      top: -27rem;
+      left: 1.5rem;
+    }
+  }
+}
