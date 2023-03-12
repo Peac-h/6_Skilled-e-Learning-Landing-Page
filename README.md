@@ -12,6 +12,8 @@ Built in accordance with given references. Fully responsive for all screen size 
 
 [Skilled e-learning landing page](https://peac-h.github.io/6_Skilled-e-Learning-Landing-Page/)
 
+![Skilled e-learning landing page](https://raw.githubusercontent.com/Peac-h/6_Skilled-e-Learning-Landing-Page/main/Screenshot.png)
+
 ## Built with
 
 - html
